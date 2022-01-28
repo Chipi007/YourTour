@@ -983,9 +983,9 @@ option{
 }
 .title__phone {
 }
-input[type=date]::-webkit-calendar-picker-indicator {
+input[type=date]::-webkit-calendar-picker-indicator, ::-webkit-inner-spin-button {
     opacity: 0;
-  }
+}
 .input-date-from {
     margin: 0px 30px 33px 0px;
     width: 48.54368932%;
