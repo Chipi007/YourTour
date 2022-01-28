@@ -983,8 +983,10 @@ option{
 }
 .title__phone {
 }
-input[type=date]::-webkit-calendar-picker-indicator, ::-webkit-inner-spin-button {
-    opacity: 0;
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
 }
 .input-date-from {
     margin: 0px 30px 33px 0px;
