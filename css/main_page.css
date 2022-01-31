@@ -983,8 +983,11 @@ option{
 }
 .title__phone {
 }
-input[type=date]::-webkit-inner-spin-button,
-input[type=date]::-webkit-calendar-picker-indicator {
+.input__date {
+    -webkit-appearance: none;
+}
+.input__date::-webkit-inner-spin-button,
+.input__date::-webkit-calendar-picker-indicator {
     display: none;
     -webkit-appearance: none;
 }
