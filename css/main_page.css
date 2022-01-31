@@ -983,14 +983,6 @@ option{
 }
 .title__phone {
 }
-.input__date {
-    -webkit-appearance: none;
-}
-.input__date::-webkit-inner-spin-button,
-.input__date::-webkit-calendar-picker-indicator {
-    display: none;
-    -webkit-appearance: none;
-}
 .input-date-from {
     margin: 0px 30px 33px 0px;
     width: 48.54368932%;
@@ -1022,14 +1014,16 @@ option{
     text-transform: uppercase;
     color: #1B1F2B;
 }
-@media (max-width: 768px){
-    .input__date {
-        background: url(../icons/ic-dropdown.svg) no-repeat right #F9F7F4;
-        background-position-x: calc(100% - 20px);
-    }
-}
 input[type=date]:invalid::-webkit-datetime-edit {
     color: #999;
+}
+.input__date {
+    -webkit-appearance: none;
+}
+.input__date::-webkit-inner-spin-button,
+.input__date::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
 }
 .title__date-to {
 }
