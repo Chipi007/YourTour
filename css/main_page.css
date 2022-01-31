@@ -1017,6 +1017,9 @@ option{
 input[type=date]:invalid::-webkit-datetime-edit {
     color: #999;
 }
+.input__date {
+    -webkit-appearance: none;
+}
 .input__date::-webkit-inner-spin-button,
 .input__date::-webkit-calendar-picker-indicator {
     display: none;
