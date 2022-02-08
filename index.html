@@ -4,478 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="заказать туры">
-    <meta name="keywords" content="туры походы сплавы велопрогулки путешествия в горы">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,500,700" rel="stylesheet" />
+    <link href="style.css" type="text/css" rel="stylesheet">
     <link rel="shortcut icon" href="icons/favicon.svg" type="image/x-icon">
-    <title>YourTour</title>
-    <link href="css/main_page.css" type="text/css" rel="stylesheet">
+    <title>ToDoList</title>
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="header__container _container">
-                <div class="logo">
-                    <img src="images/logo.svg"></img>
+        <main>
+            <aside>
+                <div class="highBlock">
+                    <div class="highBlock__title">JavaScript</div>
+                    <div class="highBlock__subtitle">JavaScript Example</div>
+                    <div class="highBlock__link"><a href="https://github.com/Chipi007/ToDoList" class="">Source</a></div>
                 </div>
-                <div class="menu">
-                    <nav class="menu__body">
-                        <ul class="menu__list">
-                            <li class="menu__link"><a href="">Туры</a></li>
-                            <li class="menu__link"><a href="">Создать тур</a></li>
-                            <li class="menu__link"><a href="">Отзывы</a></li>
-                            <li class="menu__link"><a href="">Истории</a></li>
+                <div class="quote">
+                    <blockquote class = "quote speech-bubble"><p>JavaScript® (often shortened to JS) is a lightweight, interpreted, object-oriented language with first-class functions, most known as the scripting language for Web pages, but used in many non-browser environments as well such as node.js or Apache CouchDB.</p></blockquote>
+                    <footer class = "JS"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="">JavaScript</a></footer>
+                </div>
+                <footer class="footer">If you have other helpful links to share, or find any of the links above no longer work, please <span>let us know<span></footer>
+            </aside>
+            <div class="todoapp__container">
+                <div class="todoapp">
+                    <header>todos</header>
+                    <div class="inputField">
+                        <button class="addDuty"><img src="icons/chevron-down.svg" alt="" class=""></button>
+                        <input id="newDuty" class="newDuty"type="text" placeholder="What needs to be done?" autofocus>
+                    </div>
+                    <div class="todo-list__container">
+                        <ul class = "todo-list">
                         </ul>
-                    </nav>
-                </div>
-                <div class="phone__number">
-                    <a href = "tel:+7 999 999 99 99">+7 999 999 99 99</a>
-                </div>
-            </div>
-        </header>
-        <main class="page">
-            <div class="full-screen">
-				<div class="full-screen__body">
-					<div class="full-screen__title">Идеальные<br>путешествия<br>существуют</div>
-					<div class="full-screen__text">Идейные соображения высшего порядка, а также рамки и место обучения кадров</div>
-					<div class="title_btn">
-                        <a href="">
-					        <span>Найти тур</span>
-				        </a>
-				    </div>
-				</div>
-				<div class="full-screen__image">
-					<img src="images/header-img.jpg" alt="main image">
-				</div>
-			</div>
-            <div class="block-tours">
-                <div class="block-tours__container _container">
-                    <div class="title__block">
-                        <div class="title__little">Выбери свой тур</div>
-                    </div>
-                    <div class="second-menu">
-                        <nav class="second-menu__body">
-                            <ul class="second-menu__list">
-                                <li class="second-menu__link"><a href="" >Популярные</a></li>
-                                <li class="second-menu__link"><a href="">Авторские</a></li>
-                                <li class="second-menu__link"><a href="">Походы</a></li>
-                                <li class="second-menu__link"><a href="">Сплавы</a></li>
-                                <li class="second-menu__link"><a href="">Велопрогулки</a></li>
-                            </ul>
-                        </nav>
-
-                    </div>
-                    <div class="second-block__cards">
-                        <div class="card">
-                            <a href="">
-                                <div class="card__image">
-                                    <img src="images/card tour photo-1.jpg" alt="" class="">
-                                </div>
-                                <div class="card__content">
-                                    <div class="card__title">
-                                        Путешествие в горы
-                                    </div>
-                                    <div class="card__text">
-                                        от 80 000 руб
-                                    </div>
-                                    <div class="card__button">
-                                        Подробнее
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="card">
-                            <a href="">
-                                <div class="card__image">
-                                    <img src="images/card tour photo-2.jpg" alt="" class="">
-                                </div>
-                                <div class="card__content">
-                                    <div class="card__title">
-                                        Путешествие в горы
-                                    </div>
-                                    <div class="card__text">
-                                        от 80 000 руб
-                                    </div>
-                                    <div class="card__button">
-                                        Подробнее
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="card">
-                            <a href="">
-                                <div class="card__image">
-                                    <img src="images/card tour photo-3.jpg" alt="" class="">
-                                </div>
-                                <div class="card__content">
-                                    <div class="card__title">
-                                        Путешествие в горы
-                                    </div>
-                                    <div class="card__text">
-                                        от 80 000 руб
-                                    </div>
-                                    <div class="card__button">
-                                        Подробнее
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="card">
-                            <a href="">
-                                <div class="card__image">
-                                    <img src="images/card tour photo-4.jpg" alt="" class="">
-                                </div>
-                                <div class="card__content">
-                                    <div class="card__title">
-                                        Путешествие в горы
-                                    </div>
-                                    <div class="card__text">
-                                        от 80 000 руб
-                                    </div>
-                                    <div class="card__button">
-                                        Подробнее
-                                    </div>
-                                </div>
-                            </a>
-                        </div> 
-                        <div class="card">
-                            <a href="">
-                                <div class="card__image">
-                                    <img src="images/card tour photo-5.jpg" alt="" class="">
-                                </div>
-                                <div class="card__content">
-                                    <div class="card__title">
-                                        Путешествие в горы
-                                    </div>
-                                    <div class="card__text">
-                                        от 80 000 руб
-                                    </div>
-                                    <div class="card__button">
-                                        Подробнее
-                                    </div>
-                                </div>
-                            </a>
-                        </div> 
-                        <div class="card">
-                            <a href="">
-                                <div class="card__image">
-                                    <img src="images/card tour photo-6.jpg" alt="" class="">
-                                </div>
-                                <div class="card__content">
-                                    <div class="card__title">
-                                        Путешествие в горы
-                                    </div>
-                                    <div class="card__text">
-                                        от 80 000 руб
-                                    </div>
-                                    <div class="card__button">
-                                        Подробнее
-                                    </div>
-                                </div>
-                            </a>
-                        </div> 
-                    </div>
-                </div>
-            </div>
-            <div class="block-create-tour">
-                <div class="block-create-tour__container _container">
-                    <div class="create-tour__title">
-                        <div class="title__text title__main ">Собери свой тур</div>
-                    </div>
-                    <div class="create-tour__subtitle">
-                        <div class="subtitle__text subtitle">Идейные соображения высшего порядка,<p>а также рамки и место обучения кадров</p></div>
-                    </div>
-                    <div class="form-container _container">
-                        <div class="form-container__content">
-                            <form action="#" method="GET">
-                                <div class="main-info">
-                                    <div class="block__1">
-                                        <div class="input-name">
-                                            <div class="title__name title__form">Имя</div>
-                                           <input type="text" name="name" value="" placeholder="Введите Ваше имя" class="input">
-                                        </div>
-                                        <div class="input-direction">
-                                            <div class="title__direction title__form">Направление</div>
-                                           <select name="direction" class="input__select input" required>
-                                               <option value="" disabled selected hidden>Куда хотите ехать</option>
-                                               <option value="sochi">Сочи</option>
-                                               <option value="alyaska">Аляска</option>
-                                               <option value="sakhalin">Сахалин</option>
-                                               <option value="kamchatka">Камчатка</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="block__2">
-                                        <div class="input-email">
-                                            <div class="title__email title__form">Email</div>
-                                           <input type="text" name="email" value="" placeholder="example@mail.com" class="input">
-                                        </div>
-                                        <div class="input-phone">
-                                            <div class="title__phone title__form">Телефон</div>
-                                           <input type="tel" name="phone" id="phone" value="" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" class="input">
-                                        </div>
-                                    </div>
-                                    <div class="block__3">
-                                        <div class="input-date-from">
-                                            <div class="title__date-from title__form">Дата от</div>
-                                           <input type="date" name="date-from" value="" class="input input__date" required>
-                                        </div>
-                                        <div class="input-date-to">
-                                            <div class="title__date-to title__form">Дата до</div>
-                                           <input type="date" name="date-to" value="" class="input input__date" required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="input-comment">
-                                    <div class="title__comment title__form">Комментарий</div>
-                                    <textarea name="comment" placeholder="" class="input input__textarea"></textarea>
-                                </div>
-                               <div class="about-age title__form">Вам есть 18 лет?</div>
-                               <div class="radio-buttons">
-                                    <label class="radio__18_1 title__form lbl"><input type="radio" name="group1" value="yes" />Да <span></span></label>
-                                    <label class="radio__18_2 title__form lbl"><input type="radio" name="group1" value="yes" />Нет <span></span></label>
-                               </div>
-                               <div class="checkbox-button">
-                                    <label class="title__form lab"><input type="checkbox" name=" " value="receive" class="checkbox__receive"/>Нажимая кнопку, я принимаю условия <a href="">Лицензионного договора</a><span></span></label>
-                               </div>
-                               <div class="buttons-container">
-                                    <button type="submit" class="button button__dark">Найти тур</button>
-                                    <button type="reset" class="button button__light">Сбросить</button>
-                               </div>
-                            </form>
+                        <div class="infoDuties infoDuties_hide">
+                            <div class="leftDuties"><span class = "leftTasks">0</span> item<span class = "hideS">s</span></span> left</div>
+                            <button class="allDuties Duties focus" value = "all">All</button>
+                            <button class="activeDuties Duties" value = "active">Active</button>
+                            <button class="completedDuties Duties" value = "completed">Completed</button>
+                            <button class="deleteCompletedDuties">Clear completed</button>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="feedback">
-                <div class="feedback__container _container">
-                    <div class="feedback-main-text">
-                        <div class="feedback-main-text__title">Отзывы наших<p>путешественников</p></div>
-                        <div class="feedback-main-text__subtitle">Идейные соображения высшего порядка,<p>а также рамки и место обучения кадров</p></div>
-                    </div>
-                    <div class="cards">
-                        <div class="card-review">
-                            <div class="card-review-container">
-                                <div class="card-review__text">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение модели развития.</div>
-                                <div class="card-review__info-traveler">
-                                    <div class="info-traveler__text">
-                                        <div class="info-traveler__name">Мария</div>
-                                        <div class="info-traveler__tour">Тур: Вдали от дома</div>
-                                    </div>
-                                    <div class="info-traveler__photo">
-                                        <img src="images/review photo-1.jpg" alt="" class="avatar">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-review">
-                            <div class="card-review-container">
-                                <div class="card-review__text">Равным образом постоянный количественный рост и сфера нашей активности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям.<br><br>Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития.</div>
-                                <div class="card-review__info-traveler">
-                                    <div class="info-traveler__text">
-                                        <div class="info-traveler__name">Павел</div>
-                                        <div class="info-traveler__tour">Тур: Путешествие в горы</div>
-                                    </div>
-                                    <div class="info-traveler__photo">
-                                        <img src="images/review photo-2.jpg" alt="" class="avatar">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="photos">
-                <div class="photos__container _container">
-                    <div class="photos-main-text">
-                        <div class="photos-main-text__title">Фотографии путешествий</div>
-                        <div class="photos-main-text__subtitle">Идейные соображения высшего порядка,<p>а также рамки и место обучения кадров<p></div>
-                    </div>
-                </div>
-                <div class="pictures">
-                    <div class="pictires__line line1">
-                        <div class="picture__item">
-                            <img src="images/travel photo-1.jpg" alt="" class="">
-                        </div>
-                        <div class="picture__item">
-                            <img src="images/travel photo-2.jpg" alt="" class="">
-                        </div>
-                        <div class="picture__item">
-                            <img src="images/travel photo-3.jpg" alt="" class="">
-                        </div>
-                        <div class="picture__item">
-                            <img src="images/travel photo-4.jpg" alt="" class="">
-                        </div>
-                    </div>
-                    <div class="pictires__line line2">
-                        <div class="picture__item">
-                            <img src="images/travel photo-5.jpg" alt="" class="">
-                        </div>
-                        <div class="picture__item">
-                            <img src="images/travel photo-6.jpg" alt="" class="">
-                        </div>
-                        <div class="picture__item">
-                            <img src="images/travel photo-7.jpg" alt="" class="">
-                        </div>
-                        <div class="picture__item">
-                            <img src="images/travel photo-8.jpg" alt="" class="">
-                        </div>
-                        <div class="picture__item">
-                            <img src="images/travel photo-13.jpg" alt="" class="">
-                        </div>
-                    </div>
-                    <div class="pictires__line line3">
-                        <div class="picture__item">
-                            <img src="images/travel photo-9.jpg" alt="" class="">
-                        </div>
-                        <div class="picture__item">
-                            <img src="images/travel photo-10.jpg" alt="" class="">
-                        </div>
-                        <div class="picture__item">
-                            <img src="images/travel photo-11.jpg" alt="" class="">
-                        </div>
-                        <div class="picture__item">
-                            <img src="images/travel photo-12.jpg" alt="" class="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="stories">
-                <div class="stories__container _container">
-                    <div class="stories-main-text">
-                        <div class="stories-main-text__title">Истории путешествий</div>
-                        <div class="stories-main-text__subtitle">Идейные соображения высшего порядка,<p>а также рамки и место обучения кадров</p></div>
-                    </div>
-                    <div class="stories-cards">
-                        <div class="stories-cards__item">
-                            <a href="" class="">
-                                <div class="item-image">
-                                    <img src="images/story photo-1.jpg" alt="" class="">
-                                </div>
-                                <div class="item-container">
-                                    <div class="item-container__title">Автостопом в Стамбул</div>
-                                    <div class="item-container__subtitle">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений:<br><br><span>вкусная еда</span><span>дешевый транспорт</span><span>красивый город.</span></div>
-                                </div>
-                            </a>
-                            <div class="item-container__buttons">
-                                <div class="main-button__container">
-                                    <div class="button__more">Подробнее</div>
-                                </div>
-                                <div class="buttons__social">
-                                    <div class="button__link">
-                                        <a href="" class="">instagram</a>
-                                    </div>
-                                    <div class="button__link">
-                                        <a href="" class="">facebook</a>
-                                    </div>
-                                    <div class="button__link">
-                                        <a href="" class="">YouTube</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="stories-cards__item">
-                            <a href="" class="">
-                                <div class="item-image">
-                                    <img src="images/story photo-2.jpg" alt="" class="">
-                                </div>
-                                <div class="item-container">
-                                    <div class="item-container__title">Автостопом в Стамбул</div>
-                                    <div class="item-container__subtitle">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.</div>
-                                </div>
-                            </a>
-                            <div class="item-container__buttons">
-                                <div class="main-button__container">
-                                    <div class="button__more">Подробнее</div>
-                                </div>
-                                <div class="buttons__social">
-                                    <div class="button__link">
-                                        <a href="" class="">instagram</a>
-                                    </div>
-                                    <div class="button__link">
-                                        <a href="" class="">ВКонтакте</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="stories-cards__item">
-                            <a href="" class="stories-cards__link">
-                                <div class="item-image">
-                                    <img src="images/story photo-3.jpg" alt="" class="">
-                                </div>
-                                <div class="item-container">
-                                    <div class="item-container__title">Автостопом в Стамбул</div>
-                                    <div class="item-container__subtitle">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.</div>
-                                </div>
-                            </a>
-                            <div class="item-container__buttons">
-                                <div class="main-button__container">
-                                    <div class="button__more">Подробнее</div>
-                                </div>
-                                <div class="buttons__social">
-                                    <div class="button__link">
-                                        <a href="" class="">instagram</a>
-                                    </div>
-                                    <div class="button__link">
-                                        <a href="" class="">facebook</a>
-                                    </div>
-                                    <div class="button__link">
-                                        <a href="" class="">ВКонтакте</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="lets-travel">
-                <div class="lets-travel__container _container">
-                    <div class="content">
-                        <div class="content__image">
-                            <img src="images/footer photo.jpg" alt="" class="">
-                        </div>
-                        <div class="content__text">
-                            <div class="content__title">Пора в путешествие вместе с нами!</div>
-                            <div class="content__subtitle">Напиши на почту и узнай подробности на <a href="mailto:yourtour@gmail.com" class="">yourtour@gmail.com</a></div>
-                        </div>
-                    </div>
+                    <footer class = "helpInfo">
+                        <div class="infoAboutDoubleClick">Double-click to edit a todo</div>
+                        <div class="">Created by <a href="https://github.com/Chipi007" class="">Konuhova Alina</a></div>
+                    </footer>
                 </div>
             </div>
         </main>
-        <footer class="footer">
-            <div class="footer-container _container">
-                <div class="footer-container__text">Наши социальные сети</div>
-                <div class="footer-container-links">
-                    <div class="footer-container-links__item">
-                        <a href="" class="">
-                            <div class="item__icon">
-                                <img src="icons/instagram.svg" alt="" class="">
-                            </div>
-                            <div class="item__text">instagram</div>
-                        </a>
-                    </div>
-                    <div class="footer-container-links__item">
-                        <a href="" class="">
-                            <div class="item__icon___facebook">
-                                <img src="icons/facebook.svg" alt="" class="">
-                            </div>
-                            <div class="item__text">facebook</div>
-                        </a>
-                    </div>
-                    <div class="footer-container-links__item">
-                        <a href="" class="">
-                            <div class="item__icon">
-                                <img src="icons/vk.svg" alt="" class="">
-                            </div>
-                            <div class="item__text">vkontakte</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </footer>   
     </div>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="JS/jquery.maskedinput.min.js"></script>
-    <script src="JS/main_script.js"></script>
+    <script src = "index.js"></script>
 </body>
 </html>
