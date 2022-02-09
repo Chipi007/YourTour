@@ -1960,11 +1960,7 @@ input[type=date]:invalid::-webkit-datetime-edit {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-}
-@media (max-width: 768px){
-    .footer-container{
-        margin: 0px 20px;
-    }
+    padding: 0px 20px;
 }
 @media (max-width: 571px){
     .footer-container{
