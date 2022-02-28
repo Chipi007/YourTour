@@ -16,15 +16,15 @@
         <header class="header">
             <div class="header__container _container">
                 <div class="logo">
-                    <img src="images/logo.svg"></img>
+                    <img src="images/logo.svg" class = "img"></img>
                 </div>
                 <div class="menu">
                     <nav class="menu__body">
                         <ul class="menu__list">
-                            <li class="menu__link"><a href="">Туры</a></li>
-                            <li class="menu__link"><a href="">Создать тур</a></li>
-                            <li class="menu__link"><a href="">Отзывы</a></li>
-                            <li class="menu__link"><a href="">Истории</a></li>
+                            <li class="menu__link white"><a href="">Туры</a></li>
+                            <li class="menu__link white"><a href="">Создать тур</a></li>
+                            <li class="menu__link white"><a href="">Отзывы</a></li>
+                            <li class="menu__link white"><a href="">Истории</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -66,8 +66,8 @@
 
                     </div>
                     <div class="second-block__cards">
-                        <div class="card">
-                            <a href="">
+                        <a href="">
+                            <div class="card">
                                 <div class="card__image">
                                     <img src="images/card tour photo-1.jpg" alt="" class="">
                                 </div>
@@ -82,10 +82,10 @@
                                         Подробнее
                                     </div>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="card">
-                            <a href="">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="card">
                                 <div class="card__image">
                                     <img src="images/card tour photo-2.jpg" alt="" class="">
                                 </div>
@@ -100,10 +100,10 @@
                                         Подробнее
                                     </div>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="card">
-                            <a href="">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="card">
                                 <div class="card__image">
                                     <img src="images/card tour photo-3.jpg" alt="" class="">
                                 </div>
@@ -118,10 +118,10 @@
                                         Подробнее
                                     </div>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="card">
-                            <a href="">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="card">
                                 <div class="card__image">
                                     <img src="images/card tour photo-4.jpg" alt="" class="">
                                 </div>
@@ -136,10 +136,10 @@
                                         Подробнее
                                     </div>
                                 </div>
-                            </a>
-                        </div> 
-                        <div class="card">
-                            <a href="">
+                            </div> 
+                        </a>
+                        <a href="">
+                            <div class="card">
                                 <div class="card__image">
                                     <img src="images/card tour photo-5.jpg" alt="" class="">
                                 </div>
@@ -154,10 +154,10 @@
                                         Подробнее
                                     </div>
                                 </div>
-                            </a>
-                        </div> 
-                        <div class="card">
-                            <a href="">
+                            </div> 
+                        </a>
+                        <a href="">
+                            <div class="card">
                                 <div class="card__image">
                                     <img src="images/card tour photo-6.jpg" alt="" class="">
                                 </div>
@@ -172,8 +172,8 @@
                                         Подробнее
                                     </div>
                                 </div>
-                            </a>
-                        </div> 
+                            </div>
+                        </a> 
                     </div>
                 </div>
             </div>
@@ -212,17 +212,17 @@
                                         </div>
                                         <div class="input-phone">
                                             <div class="title__phone title__form">Телефон</div>
-                                           <input type="tel" name="phone" id="phone" value="" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" class="input">
+                                           <input type="tel" name="phone" id="phone" value="+7" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" class="input" pattern = "\(\d{3}\) \d{3}\-\d{4}">
                                         </div>
                                     </div>
                                     <div class="block__3">
                                         <div class="input-date-from">
                                             <div class="title__date-from title__form">Дата от</div>
-                                           <input type="date" name="date-from" value="" class="input input__date" required>
+                                           <input type="date" name="date-from" value="" class="input input__date" max="3000-12-31" required>
                                         </div>
                                         <div class="input-date-to">
                                             <div class="title__date-to title__form">Дата до</div>
-                                           <input type="date" name="date-to" value="" class="input input__date" required>
+                                           <input type="date" name="date-to" value="" class="input input__date" max="9999-12-31" required>
                                         </div>
                                     </div>
                                 </div>
@@ -236,7 +236,7 @@
                                     <label class="radio__18_2 title__form lbl"><input type="radio" name="group1" value="yes" />Нет <span></span></label>
                                </div>
                                <div class="checkbox-button">
-                                    <label class="title__form lab"><input type="checkbox" name=" " value="receive" class="checkbox__receive"/>Нажимая кнопку, я принимаю условия <a href="">Лицензионного договора</a><span></span></label>
+                                    <label class="title__form lab"><input type="checkbox" name=" " value="receive" class="checkbox__receive"/>Нажимая кнопку, я принимаю условия <a href="" class = "checkbox__link">Лицензионного договора</a><span></span></label>
                                </div>
                                <div class="buttons-container">
                                     <button type="submit" class="button button__dark">Найти тур</button>
@@ -293,7 +293,7 @@
                     </div>
                 </div>
                 <div class="pictures">
-                    <div class="pictires__line line1">
+                    <div class="pictures__line line1">
                         <div class="picture__item">
                             <img src="images/travel photo-1.jpg" alt="" class="">
                         </div>
@@ -307,7 +307,7 @@
                             <img src="images/travel photo-4.jpg" alt="" class="">
                         </div>
                     </div>
-                    <div class="pictires__line line2">
+                    <div class="pictures__line line2">
                         <div class="picture__item">
                             <img src="images/travel photo-5.jpg" alt="" class="">
                         </div>
@@ -324,7 +324,7 @@
                             <img src="images/travel photo-13.jpg" alt="" class="">
                         </div>
                     </div>
-                    <div class="pictires__line line3">
+                    <div class="pictures__line line3">
                         <div class="picture__item">
                             <img src="images/travel photo-9.jpg" alt="" class="">
                         </div>
@@ -347,8 +347,8 @@
                         <div class="stories-main-text__subtitle">Идейные соображения высшего порядка,<p>а также рамки и место обучения кадров</p></div>
                     </div>
                     <div class="stories-cards">
-                        <div class="stories-cards__item">
-                            <a href="" class="">
+                        <a href="" class="">
+                            <div class="stories-cards__item">
                                 <div class="item-image">
                                     <img src="images/story photo-1.jpg" alt="" class="">
                                 </div>
@@ -356,26 +356,26 @@
                                     <div class="item-container__title">Автостопом в Стамбул</div>
                                     <div class="item-container__subtitle">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений:<br><br><span>вкусная еда</span><span>дешевый транспорт</span><span>красивый город.</span></div>
                                 </div>
-                            </a>
-                            <div class="item-container__buttons">
-                                <div class="main-button__container">
-                                    <div class="button__more">Подробнее</div>
-                                </div>
-                                <div class="buttons__social">
-                                    <div class="button__link">
-                                        <a href="" class="">instagram</a>
+                                <div class="item-container__buttons">
+                                    <div class="main-button__container">
+                                        <div class="button__more">Подробнее</div>
                                     </div>
-                                    <div class="button__link">
-                                        <a href="" class="">facebook</a>
-                                    </div>
-                                    <div class="button__link">
-                                        <a href="" class="">YouTube</a>
+                                    <div class="buttons__social">
+                                        <div class="button__link">
+                                            <a href="" class="">instagram</a>
+                                        </div>
+                                        <div class="button__link">
+                                            <a href="" class="">facebook</a>
+                                        </div>
+                                        <div class="button__link">
+                                            <a href="" class="">YouTube</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="stories-cards__item">
-                            <a href="" class="">
+                        </a>
+                        <a href="" class="">
+                            <div class="stories-cards__item">
                                 <div class="item-image">
                                     <img src="images/story photo-2.jpg" alt="" class="">
                                 </div>
@@ -383,23 +383,23 @@
                                     <div class="item-container__title">Автостопом в Стамбул</div>
                                     <div class="item-container__subtitle">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.</div>
                                 </div>
-                            </a>
-                            <div class="item-container__buttons">
-                                <div class="main-button__container">
-                                    <div class="button__more">Подробнее</div>
-                                </div>
-                                <div class="buttons__social">
-                                    <div class="button__link">
-                                        <a href="" class="">instagram</a>
+                                <div class="item-container__buttons">
+                                    <div class="main-button__container">
+                                        <div class="button__more">Подробнее</div>
                                     </div>
-                                    <div class="button__link">
-                                        <a href="" class="">ВКонтакте</a>
+                                    <div class="buttons__social">
+                                        <div class="button__link">
+                                            <a href="" class="">instagram</a>
+                                        </div>
+                                        <div class="button__link">
+                                            <a href="" class="">ВКонтакте</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="stories-cards__item">
-                            <a href="" class="stories-cards__link">
+                        </a>
+                        <a href="" class="">
+                            <div class="stories-cards__item">
                                 <div class="item-image">
                                     <img src="images/story photo-3.jpg" alt="" class="">
                                 </div>
@@ -407,24 +407,24 @@
                                     <div class="item-container__title">Автостопом в Стамбул</div>
                                     <div class="item-container__subtitle">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.</div>
                                 </div>
-                            </a>
-                            <div class="item-container__buttons">
-                                <div class="main-button__container">
-                                    <div class="button__more">Подробнее</div>
-                                </div>
-                                <div class="buttons__social">
-                                    <div class="button__link">
-                                        <a href="" class="">instagram</a>
+                                <div class="item-container__buttons">
+                                    <div class="main-button__container">
+                                        <div class="button__more">Подробнее</div>
                                     </div>
-                                    <div class="button__link">
-                                        <a href="" class="">facebook</a>
-                                    </div>
-                                    <div class="button__link">
-                                        <a href="" class="">ВКонтакте</a>
+                                    <div class="buttons__social">
+                                        <div class="button__link">
+                                            <a href="" class="">instagram</a>
+                                        </div>
+                                        <div class="button__link">
+                                            <a href="" class="">facebook</a>
+                                        </div>
+                                        <div class="button__link">
+                                            <a href="" class="">ВКонтакте</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -436,7 +436,7 @@
                         </div>
                         <div class="content__text">
                             <div class="content__title">Пора в путешествие вместе с нами!</div>
-                            <div class="content__subtitle">Напиши на почту и узнай подробности на <a href="mailto:yourtour@gmail.com" class="">yourtour@gmail.com</a></div>
+                            <div class="content__subtitle">Напиши на почту и узнай подробности на <a href="mailto:yourtour@gmail.com" class="lets-travel__mail">yourtour@gmail.com</a></div>
                         </div>
                     </div>
                 </div>
@@ -456,7 +456,7 @@
                     </div>
                     <div class="footer-container-links__item">
                         <a href="" class="">
-                            <div class="item__icon___facebook">
+                            <div class="item__icon_facebook">
                                 <img src="icons/facebook.svg" alt="" class="">
                             </div>
                             <div class="item__text">facebook</div>
