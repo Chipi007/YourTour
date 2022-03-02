@@ -1779,8 +1779,6 @@ input[type=date]:invalid::-webkit-datetime-edit {
         border-radius: 20px;
     }
 }
-.lets-travel__text{
-}
 @media (max-width: 775px){
     .lets-travel__text{
         text-align: center;
