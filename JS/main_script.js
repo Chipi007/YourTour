@@ -37,4 +37,4 @@ let changeHeader = () => {
     }
 };
 
-changeHeader();
+document.addEventListener('scroll', changeHeader);
