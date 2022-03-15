@@ -13,24 +13,24 @@ let changeHeader = () => {
     let headerLinks = document.querySelectorAll('.menu__link');
     let logo = document.querySelector('.img');
     let headerPhone = document.querySelector('.phone__number');
-    let screenHeight = innerHeight - 110;
+    let screenHeight = innerHeight;
     let scrollTop = window.scrollY;
     if(scrollTop >= screenHeight){
-        headerWrapper.classList.add('header__scrolled');
-        for(let i = 0; i < headerLinks.length; i++){
-            headerLinks[i].classList.add('black');
-            headerLinks[i].classList.remove('white');
+        for(const item of headerLinks){
+            item.classList.add('black');
+            item.classList.remove('white');
         }
+        headerWrapper.classList.add('header__scrolled');
         logo.classList.add('filtered__logo');
         headerPhone.classList.add('black');
         headerPhone.classList.remove('white');
     }
     else{
-        headerWrapper.classList.remove('header__scrolled');
-        for(let i = 0; i < headerLinks.length; i++){
-            headerLinks[i].classList.remove('black');
-            headerLinks[i].classList.add('white');
+        for(const item of headerLinks){
+            item.classList.remove('black');
+            item.classList.add('white');
         }
+        headerWrapper.classList.remove('header__scrolled');
         logo.classList.remove('filtered__logo');
         headerPhone.classList.add('white');
         headerPhone.classList.remove('black');
